@@ -26,3 +26,14 @@ print(a[2])
 a = {'a': 1, 'b': 2}
 print(a['a'])
 print(a['b'])
+
+dic = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+print(dic['name'])
+print(dic['phone'])
+print(dic['birth'])
+
+# 동일한 Key가 존재하면 어떤 Key에 해당하는 Value를 불러야 할지 알 수 없다
+a = {1: 'a'}
+print(a)
+# Key에 리스트는 쓸 수 없다
+# a = {[1,2] : 'hi'}
