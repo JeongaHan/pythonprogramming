@@ -37,3 +37,25 @@ a = {1: 'a'}
 print(a)
 # Key에 리스트는 쓸 수 없다
 # a = {[1,2] : 'hi'}
+
+a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+print(a.keys())
+for k in a.keys():
+    print(k)
+print(list(a.keys()))
+print(a.values())
+print(a.items())
+a.clear()
+print(a)
+
+a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+print(a.get('name'))
+print(a.get('phone'))
+
+print(a.get('nokey'))  # None 반환
+# print(a['nokey']) key 오류
+
+print(a.get('foo', 'bar'))
+
+print('name' in a)
+print('email' in a)
