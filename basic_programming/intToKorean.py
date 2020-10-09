@@ -1,3 +1,6 @@
+import re
+
+
 def intToKorean(number, official):
     if number == 0:
         return "영"
@@ -30,3 +33,7 @@ def intToKorean(number, official):
 
 print(intToKorean(111111, False))
 print(intToKorean(118, False))
+
+p = re.compile('[\d]+')
+m = p.findall('12345')
+print(m)
