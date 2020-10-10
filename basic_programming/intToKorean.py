@@ -1,7 +1,7 @@
 import re
 
 
-def intToKorean(number, official):
+def intToKorean(number, official=False):
     if number == 0:
         return "영"
     digits = str(number)
@@ -34,6 +34,6 @@ def intToKorean(number, official):
 print(intToKorean(111111, False))
 print(intToKorean(118, False))
 
-p = re.compile('[\d]+')
-m = p.findall('12345')
-print(m)
+p = re.compile('(?P<number>\d+)')
+m = p.findall('2호선홍대입구역9번출구11')
+print(p.sub('number', '2호선홍대입구역9번출구11'))
