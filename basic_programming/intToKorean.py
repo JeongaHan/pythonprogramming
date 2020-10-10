@@ -33,11 +33,6 @@ import re
 # print(intToKorean(111111, False))
 # print(intToKorean(118, False))
 
-p = re.compile('(?P<number>\d+)')
-m = p.findall('2호선홍대입구역9번출구11')
-print(p.sub('number', '2호선홍대입구역9번출구11'))
-
-
 def intToKorean(match):
     value = int(match.group())
     print(value)
@@ -68,6 +63,7 @@ def intToKorean(match):
     for i in range(len(builder)):
         result = result + builder[i]
     return result
+
 
 # p = re.compile('(?P<number>\d+)')
 p = re.compile('(\d+)')
