@@ -4,6 +4,6 @@ def solution(strings, n):
     return strings
 
 
-strings = ['abce', 'abcd', 'cdx']
+strings = ['abce', 'abcd', 'cdxad']
 n = 2
 print(solution(strings, n))
