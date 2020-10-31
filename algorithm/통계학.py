@@ -4,11 +4,9 @@ arrsum = 0
 for i in range(n):
     arr.append(int(input()))
     arrsum += arr[i]
-
 arr.sort()
 print(arrsum / n)
 print(arr[n // 2])
-
 arrdict = dict()
 for item in arr:
     if arrdict.get(item) is None:
