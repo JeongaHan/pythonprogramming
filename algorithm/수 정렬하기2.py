@@ -1,6 +1,5 @@
 import sys
 
-
 n = int(sys.stdin.readline())
 arr = list()
 for i in range(n):
