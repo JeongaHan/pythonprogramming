@@ -5,6 +5,7 @@ def solution(participant, completion):
         if participant[i] != completion[i]:
             return participant[i]
     return participant[len(participant) - 1]
+
 participant = ['mislav', 'stanko', 'mislav', 'ana']
 completion = ['stanko', 'ana', 'mislav']
 print(solution(participant, completion))
