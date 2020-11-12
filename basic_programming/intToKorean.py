@@ -66,7 +66,6 @@ def intToKorean(match):
     return result
 
 
-
 # p = re.compile('(?P<number>\d+)')
 p = re.compile('(\d+)')
 
