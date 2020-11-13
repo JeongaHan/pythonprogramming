@@ -10,6 +10,7 @@ for n in range(0, m):
         print(n)
         constructor = n
         break
+
 if constructor == -1:
     print(0)
 
