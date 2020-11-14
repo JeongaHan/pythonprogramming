@@ -11,6 +11,7 @@ for n in range(0, m):
         constructor = n
         break
 
+
 if constructor == -1:
     print(0)
 
