@@ -65,10 +65,8 @@ def intToKorean(match):
         result = result + builder[i]
     return result
 
-
 # p = re.compile('(?P<number>\d+)')
 p = re.compile('(\d+)')
-
 
 m = p.findall('2호선홍대입구역9번출구11')
 print(p.sub(intToKorean, '2호선홍대입구역9번출구11'))
